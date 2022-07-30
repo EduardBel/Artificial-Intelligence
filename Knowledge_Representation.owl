@@ -1,0 +1,842 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#"
+     xml:base="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#altresAutors -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#altresAutors">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#autor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#autor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#autor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Canço"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Artista"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#autorPrincipal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#autorPrincipal">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#autor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#esPotTocarAmb -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#esPotTocarAmb">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Canço"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Instrument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#instrumentPredominant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#instrumentPredominant">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Canço"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Instrument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#pertanyAlGenere -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#pertanyAlGenere">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Canço"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Genere"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#usaElsAcords -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#usaElsAcords">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Canço"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Acord"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#utilitzaLaPartitura -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#utilitzaLaPartitura">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Instrument"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Partitura"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#anyDeDebut -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#anyDeDebut">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Artista"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#anyDeSortida -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#anyDeSortida">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Canço"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#contemporani -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#contemporani">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Genere"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#dificultat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#dificultat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Canço"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Instrument"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#linkAYoutube -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#linkAYoutube">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Canço"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#linkPerAprendre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#linkPerAprendre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Canço"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#segueixEnActiu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#segueixEnActiu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Artista"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#A -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#A">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Major"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Menor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Sostingut"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Acord -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Acord">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Partitura"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Artista -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Artista"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#B -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#B">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Major"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Menor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Baix -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Baix">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Corda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Bateria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Bateria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Percussio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Bongos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Bongos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Percussio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#C -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#C">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Major"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Menor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Sostingut"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Canço -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Canço"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#ClauDeDo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#ClauDeDo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Pentagrama"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#ClauDeFa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#ClauDeFa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Pentagrama"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#ClauDeSol -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#ClauDeSol">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Pentagrama"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Corda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Corda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#D -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#D">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Major"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Menor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Sostingut"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#E -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#E">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Major"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Menor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#F -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#F">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Major"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Menor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Sostingut"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Flauta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Flauta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Vent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#G -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#G">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Major"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Menor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Sostingut"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Genere -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Genere"/>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Guitarra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Guitarra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Corda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Instrument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Instrument">
+        <rdfs:comment xml:lang="ca">Els instruments es poden dividir en corda, vents i percussió. dins d&apos;aquestes subdivisions es pot dividir encara més, com ara vent-fusta o vent-metall</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Major -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Major">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Acord"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Menor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Menor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Acord"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Oboe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Oboe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Vent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Partitura -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Partitura">
+        <rdfs:comment xml:lang="ca">Hi ha diferents tipus de representar la música. Entre elles podem trobar el pentagrama, que és la manera més clàssica, la tablatura, que es fa servir per indicar quina corda i traste de la guitarra tocar i els acords, que representen &quot;figures&quot; predeterminades que es fan per tocar cordes o tecles i que soni com una nota musical sola</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Pentagrama -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Pentagrama">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Partitura"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Percussio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Percussio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#PercussioPetita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#PercussioPetita">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Percussio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Piano -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Piano">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Corda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Saxofon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Saxofon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Vent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Sostingut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Sostingut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Acord"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Tablatura -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Tablatura">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Partitura"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Timbals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Timbals">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Percussio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Trompeta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Trompeta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Vent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Ukelele -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Ukelele">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Corda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Vent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Vent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Instrument"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#A"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Acords -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Acords">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Acord"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Am -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Am">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#A"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#ArcticMonkeys -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#ArcticMonkeys">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Artista"/>
+        <anyDeDebut rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2002</anyDeDebut>
+        <segueixEnActiu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</segueixEnActiu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#B -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#B"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#BrunoMars -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#BrunoMars">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Artista"/>
+        <anyDeDebut rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2004</anyDeDebut>
+        <segueixEnActiu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</segueixEnActiu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#C -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#C"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#CSost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#CSost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#C"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Cm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Cm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#C"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#D -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#D">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#DSost -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#DSost">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Dm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Dm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#D"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#DoIWannaKnow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#DoIWannaKnow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Acord"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Canço"/>
+        <autorPrincipal rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#ArcticMonkeys"/>
+        <esPotTocarAmb rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Guitarra"/>
+        <esPotTocarAmb rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Piano"/>
+        <esPotTocarAmb rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Ukelele"/>
+        <instrumentPredominant rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Guitarra"/>
+        <pertanyAlGenere rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Rock"/>
+        <usaElsAcords rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Cm"/>
+        <usaElsAcords rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#D"/>
+        <usaElsAcords rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#DSost"/>
+        <usaElsAcords rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Gm"/>
+        <anyDeSortida rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2013</anyDeSortida>
+        <linkAYoutube rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.youtube.com/watch?v=bpOSxM0rNPM</linkAYoutube>
+        <linkPerAprendre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://tabs.ultimate-guitar.com/tab/arctic-monkeys/do-i-wanna-know-chords-1398275</linkPerAprendre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Em -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Em">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#E"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#F -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#F">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#F"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Fm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Fm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#F"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#G -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#G">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#G"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Gm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Gm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#G"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Guitarra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Guitarra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Guitarra"/>
+        <utilitzaLaPartitura rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Acords"/>
+        <utilitzaLaPartitura rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Pentagrama"/>
+        <utilitzaLaPartitura rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Tablatura"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Marooned -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Marooned">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Canço"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Tablatura"/>
+        <autorPrincipal rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#PinkFloyd"/>
+        <esPotTocarAmb rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Guitarra"/>
+        <instrumentPredominant rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Guitarra"/>
+        <pertanyAlGenere rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Rock"/>
+        <anyDeSortida rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1994</anyDeSortida>
+        <dificultat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">elevada</dificultat>
+        <linkAYoutube rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.youtube.com/watch?v=P7YMI39sObY</linkAYoutube>
+        <linkPerAprendre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://tabs.ultimate-guitar.com/tab/pink-floyd/marooned-guitar-pro-228445</linkPerAprendre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Metal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Metal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Genere"/>
+        <contemporani rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</contemporani>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Metallica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Metallica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Artista"/>
+        <anyDeDebut rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1981</anyDeDebut>
+        <segueixEnActiu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</segueixEnActiu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#NothingElseMatters -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#NothingElseMatters">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Acord"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Canço"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Tablatura"/>
+        <autorPrincipal rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Metallica"/>
+        <esPotTocarAmb rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Guitarra"/>
+        <esPotTocarAmb rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Piano"/>
+        <esPotTocarAmb rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Ukelele"/>
+        <instrumentPredominant rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Guitarra"/>
+        <pertanyAlGenere rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#TrashMetal"/>
+        <usaElsAcords rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#A"/>
+        <usaElsAcords rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#B"/>
+        <usaElsAcords rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#C"/>
+        <usaElsAcords rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#D"/>
+        <usaElsAcords rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Em"/>
+        <usaElsAcords rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#G"/>
+        <anyDeSortida rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1991</anyDeSortida>
+        <dificultat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intermitja</dificultat>
+        <linkAYoutube rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.youtube.com/watch?v=tAGnKpE4NCI</linkAYoutube>
+        <linkPerAprendre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://tabs.ultimate-guitar.com/tab/metallica/nothing-else-matters-chords-8802</linkPerAprendre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Pentagrama -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Pentagrama">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Pentagrama"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Piano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Piano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Piano"/>
+        <utilitzaLaPartitura rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Acords"/>
+        <utilitzaLaPartitura rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Pentagrama"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#PinkFloyd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#PinkFloyd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Artista"/>
+        <anyDeDebut rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">1965</anyDeDebut>
+        <segueixEnActiu rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</segueixEnActiu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Pop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Pop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Genere"/>
+        <contemporani rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</contemporani>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Reggae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Reggae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Genere"/>
+        <contemporani rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</contemporani>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Rock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Rock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Genere"/>
+        <contemporani rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</contemporani>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Soul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Soul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Genere"/>
+        <contemporani rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</contemporani>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Tablatura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Tablatura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Tablatura"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#TrashMetal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#TrashMetal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Genere"/>
+        <contemporani rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</contemporani>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Ukelele -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Ukelele">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Ukelele"/>
+        <utilitzaLaPartitura rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Acords"/>
+        <utilitzaLaPartitura rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Tablatura"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#WhenIWasYourMan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#WhenIWasYourMan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Acord"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Canço"/>
+        <autorPrincipal rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#BrunoMars"/>
+        <esPotTocarAmb rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Guitarra"/>
+        <esPotTocarAmb rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Piano"/>
+        <esPotTocarAmb rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Ukelele"/>
+        <instrumentPredominant rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Piano"/>
+        <pertanyAlGenere rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Pop"/>
+        <usaElsAcords rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Am"/>
+        <usaElsAcords rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#C"/>
+        <usaElsAcords rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#CSost"/>
+        <usaElsAcords rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#D"/>
+        <usaElsAcords rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Dm"/>
+        <usaElsAcords rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Em"/>
+        <usaElsAcords rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#F"/>
+        <usaElsAcords rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#Fm"/>
+        <usaElsAcords rdf:resource="http://www.semanticweb.org/edube/ontologies/2020/11/Music-Ontology#G"/>
+        <anyDeSortida rdf:datatype="http://www.w3.org/2001/XMLSchema#positiveInteger">2012</anyDeSortida>
+        <dificultat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">intermitja</dificultat>
+        <linkAYoutube rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.youtube.com/watch?v=ekzHIouo8Q4</linkAYoutube>
+        <linkPerAprendre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://tabs.ultimate-guitar.com/tab/bruno-mars/when-i-was-your-man-chords-1198871</linkPerAprendre>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
